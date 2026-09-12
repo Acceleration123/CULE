@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CULE Demo">
+
+<title>CULE Demo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>CULE: A Causal Ultra-Lightweight Network For Efficient Target Speaker Extraction</h1>
+  <p class="subtitle">Audio Demo Page</p>
+  <nav class="tabs">
+    <button class="active" data-target="wsj0-2mix">WSJ0-2mix</button>
+    <button data-target="wham">WHAM!</button>
+  </nav>
+</div>
+
+<!-- ===================== WSJ0-2mix ===================== -->
+<div class="narrow-container active" id="wsj0-2mix">
+  <div class="section-title">Results on WSJ0-2mix</div>
+
+  <!-- Sample 1 -->
+  <div class="file-section">
+    <div class="file-header">
+      <div class="file-title">Sample 1</div>
+    </div>
+    <div class="audio-grid-c5">
+
+      <div class="audio-card">
+        <div class="card-title">Mixture</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id1/mixture/22go010m_0.3947_421o0310_-0.3947.png" data-lightbox="wsj0-sample1" data-title="Mixture">
+            <img src="samples/wsj0_2mix/id1/mixture/22go010m_0.3947_421o0310_-0.3947.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id1/mixture/22go010m_0.3947_421o0310_-0.3947.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 1 (Extracted)</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id1/inf_1/22go010m_0.3947_421o0310_-0.3947_22gc010w.png" data-lightbox="wsj0-sample1" data-title="Speaker 1 Extracted">
+            <img src="samples/wsj0_2mix/id1/inf_1/22go010m_0.3947_421o0310_-0.3947_22gc010w.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id1/inf_1/22go010m_0.3947_421o0310_-0.3947_22gc010w.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 1 (Ground Truth)</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id1/gt_1/22go010m_0.3947_421o0310_-0.3947.png" data-lightbox="wsj0-sample1" data-title="Speaker 1 Ground Truth">
+            <img src="samples/wsj0_2mix/id1/gt_1/22go010m_0.3947_421o0310_-0.3947.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id1/gt_1/22go010m_0.3947_421o0310_-0.3947.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 2 (Extracted)</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id1/inf_2/22go010m_0.3947_421o0310_-0.3947_421a010t.png" data-lightbox="wsj0-sample1" data-title="Speaker 2 Extracted">
+            <img src="ssamples/wsj0_2mix/id1/inf_2/22go010m_0.3947_421o0310_-0.3947_421a010t.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id1/inf_2/22go010m_0.3947_421o0310_-0.3947_421a010t.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 2 (Ground Truth)</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id1/gt_2/22go010m_0.3947_421o0310_-0.3947.png" data-lightbox="wsj0-sample1" data-title="Speaker 2 Ground Truth">
+            <img src="samples/wsj0_2mix/id1/gt_2/22go010m_0.3947_421o0310_-0.3947.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id1/gt_2/22go010m_0.3947_421o0310_-0.3947.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Sample 2 -->
+  <div class="file-section">
+    <div class="file-header">
+      <div class="file-title">Sample 2</div>
+    </div>
+    <div class="audio-grid-c5">
+
+      <div class="audio-card">
+        <div class="card-title">Mixture</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id2/mixture/422o030f_1.4574_050a050x_-1.4574.png" data-lightbox="wsj0-sample2" data-title="Mixture">
+            <img src="samples/wsj0_2mix/id2/mixture/422o030f_1.4574_050a050x_-1.4574.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id2/mixture/422o030f_1.4574_050a050x_-1.4574.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 1 (Extracted)</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id2/inf_1/422o030f_1.4574_050a050x_-1.4574_422o030d.png" data-lightbox="wsj0-sample2" data-title="Speaker 1 Extracted">
+            <img src="samples/wsj0_2mix/id2/inf_1/422o030f_1.4574_050a050x_-1.4574_422o030d.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id2/inf_1/422o030f_1.4574_050a050x_-1.4574_422o030d.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 1 (Ground Truth)</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id2/gt_1/422o030f_1.4574_050a050x_-1.4574.png" data-lightbox="wsj0-sample2" data-title="Speaker 1 Ground Truth">
+            <img src="samples/wsj0_2mix/id2/gt_1/422o030f_1.4574_050a050x_-1.4574.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id2/gt_1/422o030f_1.4574_050a050x_-1.4574.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 2 (Extracted)</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id2/inf_2/422o030f_1.4574_050a050x_-1.4574_050o020v.png" data-lightbox="wsj0-sample2" data-title="Speaker 2 Extracted">
+            <img src="samples/wsj0_2mix/id2/inf_2/422o030f_1.4574_050a050x_-1.4574.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id2/inf_2/422o030f_1.4574_050a050x_-1.4574_050o020v.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 2 (Ground Truth)</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id2/gt_2/422o030f_1.4574_050a050x_-1.4574.png" data-lightbox="wsj0-sample2" data-title="Speaker 2 Ground Truth">
+            <img src="samples/wsj0_2mix/id2/gt_2/422o030f_1.4574_050a050x_-1.4574.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id2/gt_2/422o030f_1.4574_050a050x_-1.4574.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Sample 3 -->
+  <div class="file-section">
+    <div class="file-header">
+      <div class="file-title">Sample 3</div>
+    </div>
+    <div class="audio-grid-c5">
+
+      <div class="audio-card">
+        <div class="card-title">Mixture</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id3/mixture/052a050s_1.1528_22ho0111_-1.1528.png" data-lightbox="wsj0-sample3" data-title="Mixture">
+            <img src="samples/wsj0_2mix/id3/mixture/052a050s_1.1528_22ho0111_-1.1528.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id3/mixture/052a050s_1.1528_22ho0111_-1.1528.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 1 (Extracted)</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id3/inf_1/052a050s_1.1528_22ho0111_-1.1528_052a0505.png" data-lightbox="wsj0-sample3" data-title="Speaker 1 Extracted">
+            <img src="samples/wsj0_2mix/id3/inf_1/052a050s_1.1528_22ho0111_-1.1528_052a0505.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id3/inf_1/052a050s_1.1528_22ho0111_-1.1528_052a0505.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 1 (Ground Truth)</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id3/gt_1/052a050s_1.1528_22ho0111_-1.1528.png" data-lightbox="wsj0-sample3" data-title="Speaker 1 Ground Truth">
+            <img src="samples/wsj0_2mix/id3/gt_1/052a050s_1.1528_22ho0111_-1.1528.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id3/gt_1/052a050s_1.1528_22ho0111_-1.1528.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 2 (Extracted)</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id3/inf_2/052a050s_1.1528_22ho0111_-1.1528_22hc010v.png" data-lightbox="wsj0-sample3" data-title="Speaker 2 Extracted">
+            <img src="samples/wsj0_2mix/id3/inf_2/052a050s_1.1528_22ho0111_-1.1528_22hc010v.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id3/inf_2/052a050s_1.1528_22ho0111_-1.1528_22hc010v.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 2 (Ground Truth)</div>
+        <div class="card-image">
+          <a href="samples/wsj0_2mix/id3/gt_2/052a050s_1.1528_22ho0111_-1.1528.png" data-lightbox="wsj0-sample3" data-title="Speaker 2 Ground Truth">
+            <img src="samples/wsj0_2mix/id3/gt_2/052a050s_1.1528_22ho0111_-1.1528.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="samples/wsj0_2mix/id3/gt_2/052a050s_1.1528_22ho0111_-1.1528.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- ===================== WHAM! ===================== -->
+<div class="narrow-container" id="wham">
+  <div class="section-title">Results on WHAM!</div>
+
+  <!-- Sample 1 -->
+  <div class="file-section">
+    <div class="file-header">
+      <div class="file-title">Sample 1</div>
+    </div>
+    <div class="audio-grid-c5">
+
+      <div class="audio-card">
+        <div class="card-title">Mixture</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample1/mixture.png" data-lightbox="wham-sample1" data-title="Mixture">
+            <img src="spectrogram/wham/sample1/mixture.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample1/mixture.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 1 (Extracted)</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample1/spk1_extracted.png" data-lightbox="wham-sample1" data-title="Speaker 1 Extracted">
+            <img src="spectrogram/wham/sample1/spk1_extracted.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample1/spk1_extracted.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 1 (Ground Truth)</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample1/spk1_clean.png" data-lightbox="wham-sample1" data-title="Speaker 1 Ground Truth">
+            <img src="spectrogram/wham/sample1/spk1_clean.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample1/spk1_clean.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 2 (Extracted)</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample1/spk2_extracted.png" data-lightbox="wham-sample1" data-title="Speaker 2 Extracted">
+            <img src="spectrogram/wham/sample1/spk2_extracted.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample1/spk2_extracted.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 2 (Ground Truth)</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample1/spk2_clean.png" data-lightbox="wham-sample1" data-title="Speaker 2 Ground Truth">
+            <img src="spectrogram/wham/sample1/spk2_clean.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample1/spk2_clean.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Sample 2 -->
+  <div class="file-section">
+    <div class="file-header">
+      <div class="file-title">Sample 2</div>
+    </div>
+    <div class="audio-grid-c5">
+
+      <div class="audio-card">
+        <div class="card-title">Mixture</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample2/mixture.png" data-lightbox="wham-sample2" data-title="Mixture">
+            <img src="spectrogram/wham/sample2/mixture.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample2/mixture.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 1 (Extracted)</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample2/spk1_extracted.png" data-lightbox="wham-sample2" data-title="Speaker 1 Extracted">
+            <img src="spectrogram/wham/sample2/spk1_extracted.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample2/spk1_extracted.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 1 (Ground Truth)</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample2/spk1_clean.png" data-lightbox="wham-sample2" data-title="Speaker 1 Ground Truth">
+            <img src="spectrogram/wham/sample2/spk1_clean.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample2/spk1_clean.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 2 (Extracted)</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample2/spk2_extracted.png" data-lightbox="wham-sample2" data-title="Speaker 2 Extracted">
+            <img src="spectrogram/wham/sample2/spk2_extracted.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample2/spk2_extracted.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 2 (Ground Truth)</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample2/spk2_clean.png" data-lightbox="wham-sample2" data-title="Speaker 2 Ground Truth">
+            <img src="spectrogram/wham/sample2/spk2_clean.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample2/spk2_clean.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Sample 3 -->
+  <div class="file-section">
+    <div class="file-header">
+      <div class="file-title">Sample 3</div>
+    </div>
+    <div class="audio-grid-c5">
+
+      <div class="audio-card">
+        <div class="card-title">Mixture</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample3/mixture.png" data-lightbox="wham-sample3" data-title="Mixture">
+            <img src="spectrogram/wham/sample3/mixture.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample3/mixture.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 1 (Extracted)</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample3/spk1_extracted.png" data-lightbox="wham-sample3" data-title="Speaker 1 Extracted">
+            <img src="spectrogram/wham/sample3/spk1_extracted.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample3/spk1_extracted.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 1 (Ground Truth)</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample3/spk1_clean.png" data-lightbox="wham-sample3" data-title="Speaker 1 Ground Truth">
+            <img src="spectrogram/wham/sample3/spk1_clean.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample3/spk1_clean.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 2 (Extracted)</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample3/spk2_extracted.png" data-lightbox="wham-sample3" data-title="Speaker 2 Extracted">
+            <img src="spectrogram/wham/sample3/spk2_extracted.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample3/spk2_extracted.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-card">
+        <div class="card-title">Speaker 2 (Ground Truth)</div>
+        <div class="card-image">
+          <a href="spectrogram/wham/sample3/spk2_clean.png" data-lightbox="wham-sample3" data-title="Speaker 2 Ground Truth">
+            <img src="spectrogram/wham/sample3/spk2_clean.png">
+          </a>
+        </div>
+        <div class="card-audio">
+          <audio controls>
+            <source src="audio/wham/sample3/spk2_clean.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Demo page for target speaker extraction audio samples.
+</footer>
+
+<script>
+  const buttons = document.querySelectorAll('nav.tabs button');
+  const containers = document.querySelectorAll('.narrow-container');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      containers.forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.target).classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
