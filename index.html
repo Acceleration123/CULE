@@ -10,8 +10,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,9 +17,21 @@
 <div class="header">
   <h1>CULE: A Causal Ultra-Lightweight Network For Efficient Target Speaker Extraction</h1>
   <p class="subtitle">Audio Demo Page</p>
+  
+  <!-- 顶部按钮组 -->
+  <div class="header-buttons">
+    <a href="https://github.com/Acceleration123/CULE" target="_blank" class="header-btn github-btn">
+      <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+      Code Repository
+    </a>
+  </div>
+
   <nav class="tabs">
     <button class="active" data-target="wsj0-2mix">WSJ0-2mix</button>
     <button data-target="wham">WHAM!</button>
+    <button data-target="visualization">Visualization of temporal structure degradation</button>
   </nav>
 </div>
 
@@ -40,7 +50,7 @@
         <div class="card-title">Mixture</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id1/mixture/22go010m_0.3947_421o0310_-0.3947.png" data-lightbox="wsj0-sample1" data-title="Mixture">
-            <img src="samples/wsj0_2mix/id1/mixture/22go010m_0.3947_421o0310_-0.3947.png">
+            <img src="samples/wsj0_2mix/id1/mixture/22go010m_0.3947_421o0310_-0.3947.png" alt="Mixture">
           </a>
         </div>
         <div class="card-audio">
@@ -55,7 +65,7 @@
         <div class="card-title">Speaker 1 (Extracted)</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id1/inf_1/22go010m_0.3947_421o0310_-0.3947_22gc010w.png" data-lightbox="wsj0-sample1" data-title="Speaker 1 Extracted">
-            <img src="samples/wsj0_2mix/id1/inf_1/22go010m_0.3947_421o0310_-0.3947_22gc010w.png">
+            <img src="samples/wsj0_2mix/id1/inf_1/22go010m_0.3947_421o0310_-0.3947_22gc010w.png" alt="Speaker 1 Extracted">
           </a>
         </div>
         <div class="card-audio">
@@ -70,7 +80,7 @@
         <div class="card-title">Speaker 1 (Ground Truth)</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id1/gt_1/22go010m_0.3947_421o0310_-0.3947.png" data-lightbox="wsj0-sample1" data-title="Speaker 1 Ground Truth">
-            <img src="samples/wsj0_2mix/id1/gt_1/22go010m_0.3947_421o0310_-0.3947.png">
+            <img src="samples/wsj0_2mix/id1/gt_1/22go010m_0.3947_421o0310_-0.3947.png" alt="Speaker 1 Ground Truth">
           </a>
         </div>
         <div class="card-audio">
@@ -85,7 +95,7 @@
         <div class="card-title">Speaker 2 (Extracted)</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id1/inf_2/22go010m_0.3947_421o0310_-0.3947_421a010t.png" data-lightbox="wsj0-sample1" data-title="Speaker 2 Extracted">
-            <img src="samples/wsj0_2mix/id1/inf_2/22go010m_0.3947_421o0310_-0.3947_421a010t.png">
+            <img src="samples/wsj0_2mix/id1/inf_2/22go010m_0.3947_421o0310_-0.3947_421a010t.png" alt="Speaker 2 Extracted">
           </a>
         </div>
         <div class="card-audio">
@@ -100,7 +110,7 @@
         <div class="card-title">Speaker 2 (Ground Truth)</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id1/gt_2/22go010m_0.3947_421o0310_-0.3947.png" data-lightbox="wsj0-sample1" data-title="Speaker 2 Ground Truth">
-            <img src="samples/wsj0_2mix/id1/gt_2/22go010m_0.3947_421o0310_-0.3947.png">
+            <img src="samples/wsj0_2mix/id1/gt_2/22go010m_0.3947_421o0310_-0.3947.png" alt="Speaker 2 Ground Truth">
           </a>
         </div>
         <div class="card-audio">
@@ -125,7 +135,7 @@
         <div class="card-title">Mixture</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id2/mixture/422o030f_1.4574_050a050x_-1.4574.png" data-lightbox="wsj0-sample2" data-title="Mixture">
-            <img src="samples/wsj0_2mix/id2/mixture/422o030f_1.4574_050a050x_-1.4574.png">
+            <img src="samples/wsj0_2mix/id2/mixture/422o030f_1.4574_050a050x_-1.4574.png" alt="Mixture">
           </a>
         </div>
         <div class="card-audio">
@@ -140,7 +150,7 @@
         <div class="card-title">Speaker 1 (Extracted)</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id2/inf_1/422o030f_1.4574_050a050x_-1.4574_422o030d.png" data-lightbox="wsj0-sample2" data-title="Speaker 1 Extracted">
-            <img src="samples/wsj0_2mix/id2/inf_1/422o030f_1.4574_050a050x_-1.4574_422o030d.png">
+            <img src="samples/wsj0_2mix/id2/inf_1/422o030f_1.4574_050a050x_-1.4574_422o030d.png" alt="Speaker 1 Extracted">
           </a>
         </div>
         <div class="card-audio">
@@ -155,7 +165,7 @@
         <div class="card-title">Speaker 1 (Ground Truth)</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id2/gt_1/422o030f_1.4574_050a050x_-1.4574.png" data-lightbox="wsj0-sample2" data-title="Speaker 1 Ground Truth">
-            <img src="samples/wsj0_2mix/id2/gt_1/422o030f_1.4574_050a050x_-1.4574.png">
+            <img src="samples/wsj0_2mix/id2/gt_1/422o030f_1.4574_050a050x_-1.4574.png" alt="Speaker 1 Ground Truth">
           </a>
         </div>
         <div class="card-audio">
@@ -170,7 +180,7 @@
         <div class="card-title">Speaker 2 (Extracted)</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id2/inf_2/422o030f_1.4574_050a050x_-1.4574_050o020v.png" data-lightbox="wsj0-sample2" data-title="Speaker 2 Extracted">
-            <img src="samples/wsj0_2mix/id2/inf_2/422o030f_1.4574_050a050x_-1.4574_050o020v.png">
+            <img src="samples/wsj0_2mix/id2/inf_2/422o030f_1.4574_050a050x_-1.4574_050o020v.png" alt="Speaker 2 Extracted">
           </a>
         </div>
         <div class="card-audio">
@@ -185,7 +195,7 @@
         <div class="card-title">Speaker 2 (Ground Truth)</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id2/gt_2/422o030f_1.4574_050a050x_-1.4574.png" data-lightbox="wsj0-sample2" data-title="Speaker 2 Ground Truth">
-            <img src="samples/wsj0_2mix/id2/gt_2/422o030f_1.4574_050a050x_-1.4574.png">
+            <img src="samples/wsj0_2mix/id2/gt_2/422o030f_1.4574_050a050x_-1.4574.png" alt="Speaker 2 Ground Truth">
           </a>
         </div>
         <div class="card-audio">
@@ -210,7 +220,7 @@
         <div class="card-title">Mixture</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id3/mixture/052a050s_1.1528_22ho0111_-1.1528.png" data-lightbox="wsj0-sample3" data-title="Mixture">
-            <img src="samples/wsj0_2mix/id3/mixture/052a050s_1.1528_22ho0111_-1.1528.png">
+            <img src="samples/wsj0_2mix/id3/mixture/052a050s_1.1528_22ho0111_-1.1528.png" alt="Mixture">
           </a>
         </div>
         <div class="card-audio">
@@ -225,7 +235,7 @@
         <div class="card-title">Speaker 1 (Extracted)</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id3/inf_1/052a050s_1.1528_22ho0111_-1.1528_052a0505.png" data-lightbox="wsj0-sample3" data-title="Speaker 1 Extracted">
-            <img src="samples/wsj0_2mix/id3/inf_1/052a050s_1.1528_22ho0111_-1.1528_052a0505.png">
+            <img src="samples/wsj0_2mix/id3/inf_1/052a050s_1.1528_22ho0111_-1.1528_052a0505.png" alt="Speaker 1 Extracted">
           </a>
         </div>
         <div class="card-audio">
@@ -240,7 +250,7 @@
         <div class="card-title">Speaker 1 (Ground Truth)</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id3/gt_1/052a050s_1.1528_22ho0111_-1.1528.png" data-lightbox="wsj0-sample3" data-title="Speaker 1 Ground Truth">
-            <img src="samples/wsj0_2mix/id3/gt_1/052a050s_1.1528_22ho0111_-1.1528.png">
+            <img src="samples/wsj0_2mix/id3/gt_1/052a050s_1.1528_22ho0111_-1.1528.png" alt="Speaker 1 Ground Truth">
           </a>
         </div>
         <div class="card-audio">
@@ -255,7 +265,7 @@
         <div class="card-title">Speaker 2 (Extracted)</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id3/inf_2/052a050s_1.1528_22ho0111_-1.1528_22hc010v.png" data-lightbox="wsj0-sample3" data-title="Speaker 2 Extracted">
-            <img src="samples/wsj0_2mix/id3/inf_2/052a050s_1.1528_22ho0111_-1.1528_22hc010v.png">
+            <img src="samples/wsj0_2mix/id3/inf_2/052a050s_1.1528_22ho0111_-1.1528_22hc010v.png" alt="Speaker 2 Extracted">
           </a>
         </div>
         <div class="card-audio">
@@ -270,7 +280,7 @@
         <div class="card-title">Speaker 2 (Ground Truth)</div>
         <div class="card-image">
           <a href="samples/wsj0_2mix/id3/gt_2/052a050s_1.1528_22ho0111_-1.1528.png" data-lightbox="wsj0-sample3" data-title="Speaker 2 Ground Truth">
-            <img src="samples/wsj0_2mix/id3/gt_2/052a050s_1.1528_22ho0111_-1.1528.png">
+            <img src="samples/wsj0_2mix/id3/gt_2/052a050s_1.1528_22ho0111_-1.1528.png" alt="Speaker 2 Ground Truth">
           </a>
         </div>
         <div class="card-audio">
@@ -301,7 +311,7 @@
         <div class="card-title">Mixture</div>
         <div class="card-image">
           <a href="samples/wham/id1/mixture/441c0201_0.34953_440o030u_-0.34953.png" data-lightbox="wham-sample1" data-title="Mixture">
-            <img src="samples/wham/id1/mixture/441c0201_0.34953_440o030u_-0.34953.png">
+            <img src="samples/wham/id1/mixture/441c0201_0.34953_440o030u_-0.34953.png" alt="Mixture">
           </a>
         </div>
         <div class="card-audio">
@@ -316,7 +326,7 @@
         <div class="card-title">Speaker 1 (Extracted)</div>
         <div class="card-image">
           <a href="samples/wham/id1/inf_1/441c0201_0.34953_440o030u_-0.34953_441c020u.png" data-lightbox="wham-sample1" data-title="Speaker 1 Extracted">
-            <img src="samples/wham/id1/inf_1/441c0201_0.34953_440o030u_-0.34953_441c020u.png">
+            <img src="samples/wham/id1/inf_1/441c0201_0.34953_440o030u_-0.34953_441c020u.png" alt="Speaker 1 Extracted">
           </a>
         </div>
         <div class="card-audio">
@@ -331,7 +341,7 @@
         <div class="card-title">Speaker 1 (Ground Truth)</div>
         <div class="card-image">
           <a href="samples/wham/id1/gt_1/441c0201_0.34953_440o030u_-0.34953.png" data-lightbox="wham-sample1" data-title="Speaker 1 Ground Truth">
-            <img src="samples/wham/id1/gt_1/441c0201_0.34953_440o030u_-0.34953.png">
+            <img src="samples/wham/id1/gt_1/441c0201_0.34953_440o030u_-0.34953.png" alt="Speaker 1 Ground Truth">
           </a>
         </div>
         <div class="card-audio">
@@ -346,7 +356,7 @@
         <div class="card-title">Speaker 2 (Extracted)</div>
         <div class="card-image">
           <a href="samples/wham/id1/inf_2/441c0201_0.34953_440o030u_-0.34953_440c020b.png" data-lightbox="wham-sample1" data-title="Speaker 2 Extracted">
-            <img src="samples/wham/id1/inf_2/441c0201_0.34953_440o030u_-0.34953_440c020b.png">
+            <img src="samples/wham/id1/inf_2/441c0201_0.34953_440o030u_-0.34953_440c020b.png" alt="Speaker 2 Extracted">
           </a>
         </div>
         <div class="card-audio">
@@ -361,7 +371,7 @@
         <div class="card-title">Speaker 2 (Ground Truth)</div>
         <div class="card-image">
           <a href="samples/wham/id1/gt_2/441c0201_0.34953_440o030u_-0.34953.png" data-lightbox="wham-sample1" data-title="Speaker 2 Ground Truth">
-            <img src="samples/wham/id1/gt_2/441c0201_0.34953_440o030u_-0.34953.png">
+            <img src="samples/wham/id1/gt_2/441c0201_0.34953_440o030u_-0.34953.png" alt="Speaker 2 Ground Truth">
           </a>
         </div>
         <div class="card-audio">
@@ -386,7 +396,7 @@
         <div class="card-title">Mixture</div>
         <div class="card-image">
           <a href="samples/wham/id2/mixture/445c020t_0.33042_050c0113_-0.33042.png" data-lightbox="wham-sample2" data-title="Mixture">
-            <img src="samples/wham/id2/mixture/445c020t_0.33042_050c0113_-0.33042.png">
+            <img src="samples/wham/id2/mixture/445c020t_0.33042_050c0113_-0.33042.png" alt="Mixture">
           </a>
         </div>
         <div class="card-audio">
@@ -401,7 +411,7 @@
         <div class="card-title">Speaker 1 (Extracted)</div>
         <div class="card-image">
           <a href="samples/wham/id2/inf_1/445c020t_0.33042_050c0113_-0.33042_445c020h.png" data-lightbox="wham-sample2" data-title="Speaker 1 Extracted">
-            <img src="samples/wham/id2/inf_1/445c020t_0.33042_050c0113_-0.33042_445c020h.png">
+            <img src="samples/wham/id2/inf_1/445c020t_0.33042_050c0113_-0.33042_445c020h.png" alt="Speaker 1 Extracted">
           </a>
         </div>
         <div class="card-audio">
@@ -416,7 +426,7 @@
         <div class="card-title">Speaker 1 (Ground Truth)</div>
         <div class="card-image">
           <a href="samples/wham/id2/gt_1/445c020t_0.33042_050c0113_-0.33042.png" data-lightbox="wham-sample2" data-title="Speaker 1 Ground Truth">
-            <img src="samples/wham/id2/gt_1/445c020t_0.33042_050c0113_-0.33042.png">
+            <img src="samples/wham/id2/gt_1/445c020t_0.33042_050c0113_-0.33042.png" alt="Speaker 1 Ground Truth">
           </a>
         </div>
         <div class="card-audio">
@@ -431,7 +441,7 @@
         <div class="card-title">Speaker 2 (Extracted)</div>
         <div class="card-image">
           <a href="samples/wham/id2/inf_2/445c020t_0.33042_050c0113_-0.33042_050a050w.png" data-lightbox="wham-sample2" data-title="Speaker 2 Extracted">
-            <img src="samples/wham/id2/inf_2/445c020t_0.33042_050c0113_-0.33042_050a050w.png">
+            <img src="samples/wham/id2/inf_2/445c020t_0.33042_050c0113_-0.33042_050a050w.png" alt="Speaker 2 Extracted">
           </a>
         </div>
         <div class="card-audio">
@@ -446,7 +456,7 @@
         <div class="card-title">Speaker 2 (Ground Truth)</div>
         <div class="card-image">
           <a href="samples/wham/id2/gt_2/445c020t_0.33042_050c0113_-0.33042.png" data-lightbox="wham-sample2" data-title="Speaker 2 Ground Truth">
-            <img src="samples/wham/id2/gt_2/445c020t_0.33042_050c0113_-0.33042.png">
+            <img src="samples/wham/id2/gt_2/445c020t_0.33042_050c0113_-0.33042.png" alt="Speaker 2 Ground Truth">
           </a>
         </div>
         <div class="card-audio">
@@ -471,7 +481,7 @@
         <div class="card-title">Mixture</div>
         <div class="card-image">
           <a href="samples/wham/id3/mixture/052a050b_0.60383_443c020a_-0.60383.png" data-lightbox="wham-sample3" data-title="Mixture">
-            <img src="samples/wham/id3/mixture/052a050b_0.60383_443c020a_-0.60383.png">
+            <img src="samples/wham/id3/mixture/052a050b_0.60383_443c020a_-0.60383.png" alt="Mixture">
           </a>
         </div>
         <div class="card-audio">
@@ -486,7 +496,7 @@
         <div class="card-title">Speaker 1 (Extracted)</div>
         <div class="card-image">
           <a href="samples/wham/id3/inf_1/052a050b_0.60383_443c020a_-0.60383_052c010r.png" data-lightbox="wham-sample3" data-title="Speaker 1 Extracted">
-            <img src="samples/wham/id3/inf_1/052a050b_0.60383_443c020a_-0.60383_052c010r.png">
+            <img src="samples/wham/id3/inf_1/052a050b_0.60383_443c020a_-0.60383_052c010r.png" alt="Speaker 1 Extracted">
           </a>
         </div>
         <div class="card-audio">
@@ -501,7 +511,7 @@
         <div class="card-title">Speaker 1 (Ground Truth)</div>
         <div class="card-image">
           <a href="samples/wham/id3/gt_1/052a050b_0.60383_443c020a_-0.60383.png" data-lightbox="wham-sample3" data-title="Speaker 1 Ground Truth">
-            <img src="samples/wham/id3/gt_1/052a050b_0.60383_443c020a_-0.60383.png">
+            <img src="samples/wham/id3/gt_1/052a050b_0.60383_443c020a_-0.60383.png" alt="Speaker 1 Ground Truth">
           </a>
         </div>
         <div class="card-audio">
@@ -516,7 +526,7 @@
         <div class="card-title">Speaker 2 (Extracted)</div>
         <div class="card-image">
           <a href="samples/wham/id3/inf_2/052a050b_0.60383_443c020a_-0.60383_443o030y.png" data-lightbox="wham-sample3" data-title="Speaker 2 Extracted">
-            <img src="samples/wham/id3/inf_2/052a050b_0.60383_443c020a_-0.60383_443o030y.png">
+            <img src="samples/wham/id3/inf_2/052a050b_0.60383_443c020a_-0.60383_443o030y.png" alt="Speaker 2 Extracted">
           </a>
         </div>
         <div class="card-audio">
@@ -531,7 +541,7 @@
         <div class="card-title">Speaker 2 (Ground Truth)</div>
         <div class="card-image">
           <a href="samples/wham/id3/gt_2/052a050b_0.60383_443c020a_-0.60383.png" data-lightbox="wham-sample3" data-title="Speaker 2 Ground Truth">
-            <img src="samples/wham/id3/gt_2/052a050b_0.60383_443c020a_-0.60383.png">
+            <img src="samples/wham/id3/gt_2/052a050b_0.60383_443c020a_-0.60383.png" alt="Speaker 2 Ground Truth">
           </a>
         </div>
         <div class="card-audio">
@@ -547,11 +557,26 @@
 
 </div>
 
+<!-- ===================== Temporal Visualization ===================== -->
+<div class="narrow-container" id="visualization">
+  <div class="section-title">Visualization of Temporal Processing</div>
+  
+  <div class="file-section">
+    <p style="text-align: center; color: #6c757d; padding: 60px 20px; font-size: 1.1rem;">
+      Temporal visualization content coming soon...
+    </p>
+  </div>
+</div>
+
 <footer>
   Demo page for target speaker extraction audio samples.
 </footer>
 
+<!-- JS 加载顺序：先 jQuery，再 lightbox，最后是自定义脚本 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 <script>
+  // Tab 切换功能
   const buttons = document.querySelectorAll('nav.tabs button');
   const containers = document.querySelectorAll('.narrow-container');
   buttons.forEach(btn => {
@@ -561,6 +586,13 @@
       btn.classList.add('active');
       document.getElementById(btn.dataset.target).classList.add('active');
     });
+  });
+
+  // 配置 lightbox2
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'albumLabel': "Image %1 of %2"
   });
 </script>
 
