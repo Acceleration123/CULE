@@ -27,7 +27,7 @@
       Code Repository
     </a>
   </div>
-
+ 
   <nav class="tabs">
     <button class="active" data-target="wsj0-2mix">WSJ0-2mix</button>
     <button data-target="wham">WHAM!</button>
@@ -558,14 +558,52 @@
 </div>
 
 <!-- ===================== Temporal Visualization ===================== -->
+<!-- ===================== Temporal Visualization ===================== -->
 <div class="narrow-container" id="visualization">
   <div class="section-title">Visualization of Temporal Processing</div>
   
+  <!-- Part 1: Before Temporal Enhancer -->
   <div class="file-section">
-    <p style="text-align: center; color: #6c757d; padding: 60px 20px; font-size: 1.1rem;">
-      Temporal visualization content coming soon...
-    </p>
+    <div class="file-header">
+      <h3 class="file-title">Frame-level Speaker Embedding Before Temporal Enhancer</h3>
+    </div>
+    
+    <div class="visualization-container">
+      <div class="vis-image">
+        <a href="visualization/fig_no_te_all.png" data-lightbox="temporal-vis" data-title="Before Temporal Enhancer">
+          <img src="visualization/fig_no_te_all.png" alt="Before Temporal Enhancer">
+        </a>
+      </div>
+      <div class="vis-description">
+        <p><strong>X-axis:</strong> Frame &nbsp;|&nbsp; <strong>Y-axis:</strong> Frequency (64-dim)</p>
+        <p class="vis-analysis">
+          It can be observed that more than half of the feature maps show almost no variation over time, lacking frame-level conditioning capability.
+        </p>
+      </div>
+    </div>
   </div>
+
+  <!-- Part 2: Enhanced by Temporal Enhancer -->
+  <div class="file-section">
+    <div class="file-header">
+      <h3 class="file-title">Frame-level Speaker Embedding Enhanced by Temporal Enhancer</h3>
+    </div>
+    
+    <div class="visualization-container">
+      <div class="vis-image">
+        <a href="visualization/fig_with_te_all.png" data-lightbox="temporal-vis" data-title="Enhanced by Temporal Enhancer">
+          <img src="visualization/fig_with_te_all.png" alt="Enhanced by Temporal Enhancer">
+        </a>
+      </div>
+      <div class="vis-description">
+        <p><strong>X-axis:</strong> Frame &nbsp;|&nbsp; <strong>Y-axis:</strong> Frequency (64-dim)</p>
+        <p class="vis-analysis">
+          It can be observed that the enhanced feature maps all exhibit clear temporal structures. The ablation results also demonstrate that the addition of TE brings <strong>0.7dB SI-SDRi</strong> improvement (ID2 over ID1), while only adding <strong>0.06G MACs/s</strong> computational cost. These findings all validate the effectiveness of TE.
+        </p>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <footer>

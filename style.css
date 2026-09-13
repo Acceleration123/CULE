@@ -219,3 +219,73 @@ footer {
 footer p {
   margin: 6px 0;
 }
+
+/* Temporal Visualization Styles */
+.visualization-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.vis-image {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vis-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.vis-image img:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.vis-description {
+  width: 100%;
+  max-width: 1200px;
+  background: #f8f9fa;
+  padding: 20px 24px;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+}
+
+.vis-description p {
+  margin: 0 0 12px 0;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.vis-description p:last-child {
+  margin-bottom: 0;
+}
+
+.vis-description strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.vis-analysis {
+  font-size: 0.98rem;
+  color: #495057;
+  line-height: 1.8;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .vis-description {
+    padding: 16px 18px;
+  }
+  
+  .vis-description p {
+    font-size: 0.92rem;
+  }
+}
